@@ -1,0 +1,19 @@
+# macOS
+*.DS_Store
+
+# Xcode
+*.xcuserdatad
+*.xcuserdata
+*.lock
+*.xcworkspace
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+
+# Swift Package Manager
+.build/
+*.swiftpm
+
+# Cocoapods
+Pods/

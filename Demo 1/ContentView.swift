@@ -9,13 +9,48 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        VStack{
+            Image("Nigrafalls")
+                .resizable()
+                .aspectRatio(contentMode:.fit)
+                .cornerRadius(15)
+                
+            HStack{
+                
+                Text("Nigrafalls")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                Spacer()
+                VStack{
+                    HStack{
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.leadinghalf.fill")
+                    }
+                    Text("(Reviews 361)")
+                   
+                }.foregroundColor(.orange)
+                    .font(.caption)
+            }
+            
+           
+            
+            Text("Come visits the falls for an experiance of a life time")
+            HStack{
+                Spacer()
+                Image(systemName: "binoculars.fill")
+                Image(systemName: "fork.knife")
+            }.foregroundColor(.gray)
+                .font(.caption)
+            
         }
-        .padding()
+        
+       
+        
+        
     }
 }
 
