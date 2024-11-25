@@ -9,54 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
         ZStack{
-            Color(.systemMint)
-                .ignoresSafeArea()
-            
+            Image("background-cloth")
+                .aspectRatio(contentMode: .fit)
             VStack{
-                Image("Nigrafalls")
-                    .resizable()
-                    .aspectRatio(contentMode:.fit)
-                    .cornerRadius(15)
-                    
-                HStack{
-                    
-                    Text("Nigrafalls")
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                    Spacer()
+                Image("logo")
+                
+                HStack(spacing: 40){
+                    Image("card2")
+                   
+                    Image("card3")
+                }.padding(40.0)
+                Image("button")
+                
+                HStack(spacing: 80){
                     VStack{
-                        HStack{
-                            Image(systemName: "star.fill")
-                            Image(systemName: "star.fill")
-                            Image(systemName: "star.fill")
-                            Image(systemName: "star.fill")
-                            Image(systemName: "star.leadinghalf.fill")
-                        }
-                        Text("(Reviews 361)")
-                       
-                    }.foregroundColor(.orange)
-                        .font(.caption)
-                }
-                
-               
-                
-                Text("Come visits the falls for an experiance of a life time")
-                HStack{
-                    Spacer()
-                    Image(systemName: "binoculars.fill")
-                    Image(systemName: "fork.knife")
-                }.foregroundColor(.gray)
-                    .font(.caption)
-                
+                        Text("Player")
+                        Text("0")
+                        
+                    }
+                    VStack{
+                        
+                        Text("CPU")
+                        Text("0")
+                    }
+                   
+                }.foregroundColor(.white)
             }
-            .padding()
-               .background(Rectangle().foregroundColor(.white))
-               .cornerRadius(15)
-               .shadow(radius: 15)
-                .padding()
         }
+       
         
        
         
