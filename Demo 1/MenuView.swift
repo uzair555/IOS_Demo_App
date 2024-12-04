@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MenuView: View {
   @State var playerCard = "card7"
    @State var cpuCard = "card14"
     
@@ -89,12 +89,12 @@ struct ContentView: View {
         if(playerCardValue>cpuCardValue){
             playerScore += 1
         }else if(playerCardValue<cpuCardValue){
-            cpuScore += 1 
+            cpuScore += 1
         }
         
     }
 }
 
 #Preview {
-    ContentView()
+    MenuView()
 }
